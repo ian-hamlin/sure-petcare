@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Sure Petcare API Wrapper
 A small rust library that wraps around the API calls for the Sure Petcare API
 
