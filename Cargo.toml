@@ -1,9 +1,18 @@
 [package]
-name = "sure-petcare"
+name = "sure_petcare"
 version = "0.1.0"
 authors = ["ian-hamlin <ian@ihamlin.co.uk>"]
 edition = "2018"
+description = "A small rust library that wraps around the API calls for the Sure Petcare API"
+publish = false
+categories = ["api-bindings"]
+keywords = ["surepet", "api", "rest", 'iot']
+license = "MIT"
+maintenance = { status = "actively-developed" }
+readme = "README.md"
+repository = "https://github.com/ian-hamlin/sure-petcare"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde = { version = "1.0.91", features = ["derive"] }
