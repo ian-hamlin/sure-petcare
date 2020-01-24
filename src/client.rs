@@ -2,3 +2,5 @@
 pub struct SurePet {
     token: String,
 }
+
+impl SurePet {}
