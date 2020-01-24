@@ -60,25 +60,25 @@ impl<'a> RequestBuilder<'a> {
         RequestBuilder::default()
     }
 
-    /// Sets the critical value.
+    /// Sets the email address.
     pub fn with_email_address<T: Into<Cow<'a, str>>>(&mut self, email_address: T) -> &mut Self {
         self.email_address = email_address.into();
         self
     }
 
-    /// Sets the name value.
+    /// Sets the password.
     pub fn with_password<T: Into<Cow<'a, str>>>(&mut self, password: T) -> &mut Self {
         self.password = password.into();
         self
     }
 
-    /// Sets the volume value.
+    /// Sets the device id.
     pub fn with_device_id<T: Into<Cow<'a, str>>>(&mut self, device_id: T) -> &mut Self {
         self.device_id = device_id.into();
         self
     }
 
-    /// Builds the critial sound with no validation.
+    /// Builds the request.
     pub fn build(&self) -> Request<'a> {
         Request {
             email_address: self.email_address.to_owned(),
